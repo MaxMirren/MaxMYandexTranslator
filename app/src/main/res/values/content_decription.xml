@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>'
+    <string name="language_changer_icon">language changer</string>
+    <string name="microphone_icon">microphone button</string>
+    <string name="sound_icon">sound icon</string>
+    <string name="cross_icon">cross icon</string>
+    <string name="bookmark_icon">bookmark icon</string>
+    <string name="search_icon">search icon</string>
+    <string name="trash_bin_icon">trash bin icon</string>
+</resources>

@@ -1,0 +1,119 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".fragments.FragmentTranslate">
+
+    <include layout="@layout/translate_toolbar"
+        android:id="@+id/toolbar_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/edit_field"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintTop_toTopOf="@+id/surfaceView"
+        app:layout_constraintBottom_toBottomOf="@+id/surfaceView"
+        app:layout_constraintLeft_toLeftOf="@+id/surfaceView"
+        app:layout_constraintRight_toRightOf="@+id/surfaceView"
+        android:gravity="top"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:enabled="false"
+        tools:ignore="LabelFor"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ImageButton
+        android:id="@+id/cross_from_main"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="7dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="@string/cross_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/bnt_cross_changer"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/surfaceView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/surfaceView"
+        app:layout_constraintRight_toRightOf="@+id/surfaceView"
+        app:layout_constraintTop_toBottomOf="@+id/edit_field"
+        app:srcCompat="@drawable/btn_cross" />
+
+    <TextView
+        android:id="@+id/powered_by_yandex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="@id/surfaceView"
+        app:layout_constraintRight_toRightOf="@+id/surfaceView"
+        app:layout_constraintTop_toBottomOf="@id/edit_field"
+        app:layout_constraintBottom_toBottomOf="@id/surfaceView"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginEnd="5dp"
+        android:text="@string/powered_by_yandex"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surfaceView"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" >
+
+        <TextView
+            android:id="@+id/translate_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:gravity="top"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:textColor="@color/textAccentDark"
+            android:textSize="21sp"/>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

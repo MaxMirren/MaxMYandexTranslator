@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_description_p1">This application provides following functionality list:
+    translating with and without auto detection, adding translations to history list and favorites,
+        manipulating with elements of mentioned lists.</string>
+    <string name="app_description_p2">Yandex Translator uses Yandex.Translate API to translate typed words and
+        provides link to Yandex Translate service by displaying Powered by Yandex.Translate label in each screen which
+        has translated content.
+    </string>
+    <string name="app_description_p3">This application was developed as a task test of Yandex company to show
+    author\'s abilities in Java programming on Android Platform.
+    </string>
+    <string name="author">Author: Mironov Maxim Andreevich</string>
+    <string name="email">Email: maxmirrenya@yandex.ru</string>
+    <string name="phone">Phone: +7(964)513&#8211;18&#8211;47</string>
+    <string name="about_end">Moscow, 2017</string>
+</resources>

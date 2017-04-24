@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Yandex Translator</string>
+    <string name="loading_data">Loading data&#8230;</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="warning_translation">Make target and source language different</string>
+    <string name="warning_language_changer">For this action disable Auto detection by selecting source language</string>
+    <string name="powered_by_yandex">Powered by Yandex.Translate</string>
+    <string name="powered_by_yandex_url">http://translate.yandex.com/</string>
+
+    <string name="translator">Translator</string>
+    <string name="history">History</string>
+    <string name="favorites">Favorites</string>
+    <string name="help">About</string>
+
+    <string name="source_language">Auto detection</string>
+    <string name="target_language">Language</string>
+    <string name="title_source_language">Source language:</string>
+    <string name="title_target_language">Target language:</string>
+
+    <string name="favorites_search_hint">Search in favorites</string>
+    <string name="history_search_hint">Search in history</string>
+    <string name="no_appropriate_elements_were_found">No appropriate elements were found</string>
+    <string name="history_list_is_empty">Your translation history list is empty</string>
+    <string name="favorites_list_is_empty">Your translation favorites list is empty</string>
+
+    <string name="acceptance">Acceptance</string>
+    <string name="delete_this_item">Delete this translation?</string>
+    <string name="delete_all_items">Delete all translations?</string>
+    <string name="delete_all_displayed_items">Delete all displayed translations?</string>
+    <string name="remove_all_favorite_items">Remove all translations from favorites?</string>
+    <string name="remove_all_displayed_favorite_items">Remove all displayed translations from favorites?</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+
+
+    <string name="example_favorites_title">acquaintance</string>
+    <string name="example_favorites_desc">знакомство</string>
+    <string name="example_favorites_indicator">en-ru</string>
+</resources>

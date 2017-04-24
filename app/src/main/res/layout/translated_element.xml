@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/translated_element_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:longClickable="true">
+
+    <TextView
+        android:id="@+id/translation_forward_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textStyle="normal"
+        android:textAllCaps="true"
+        android:text="@string/example_favorites_indicator"
+        android:textSize="14sp"
+        android:textColor="@color/desc"
+        android:maxLines="1" />
+
+    <ImageButton
+        android:id="@+id/bookmark_button_1"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.5"
+        android:scaleType="fitXY"
+        android:background="@color/translated_element_background"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:srcCompat="@drawable/btn_bookmark_not_bookmarked"
+        android:src="@drawable/btn_bookmark_changer"
+        android:contentDescription="@string/bookmark_icon"/>
+
+    <TextView
+        android:id="@+id/input_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toLeftOf="@id/translation_forward_1"
+        android:layout_marginStart="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bookmark_button_1"
+        app:layout_constraintVertical_bias="0.25"
+        android:textStyle="bold"
+        android:text="@string/example_favorites_title"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/output_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toLeftOf="@id/translation_forward_1"
+        android:layout_marginStart="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintTop_toBottomOf="@id/input_1"
+        app:layout_constraintLeft_toRightOf="@+id/bookmark_button_1"
+        app:layout_constraintVertical_bias="0.25"
+        android:textStyle="normal"
+        android:text="@string/example_favorites_desc"
+        android:textSize="14sp"
+        android:textColor="@color/desc"
+        android:maxLines="1" />
+
+</android.support.constraint.ConstraintLayout>
